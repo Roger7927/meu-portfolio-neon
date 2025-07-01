@@ -3,79 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome - Portfólio Profissional</title>
+    <title>Guillermo Hernandez - Portfólio Profissional</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Seu Nome</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <div class="background-stars"></div>
+    <div class="background-bubbles"></div>
+    
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo-text">Guillermo Hernandez</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#sobre" class="scroll-link">Sobre Mim</a></li>
+                <li><a href="#habilidades" class="scroll-link">Habilidades</a></li>
+                <li><a href="#portfolio" class="scroll-link">Portfólio</a></li>
+                <li><a href="#contato" class="scroll-link">Contato</a></li>
             </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero-section">
+        <section id="home" class="hero-section section">
             <div class="container">
-                <h1>Olá, eu sou [Seu Nome/Sua Especialidade]</h1>
-                <p>Construindo o futuro com código e criatividade.</p>
-                <a href="#portfolio" class="btn-neon">Ver Projetos</a>
+        <h1>Olá, eu sou Guillermo Hernandez, Estudante de Análise e Desenvolvimento de Sistemas na UNINTER</h1>
+                <p class="fade-in">Construindo o futuro com código e criatividade.</p>
+                <a href="#portfolio" class="btn-neon scroll-link fade-in-delay">Ver Projetos</a>
             </div>
         </section>
 
         <section id="sobre" class="section">
             <div class="container">
-                <h2>Sobre Mim</h2>
-                <p>Aqui você vai contar sua história, paixões e o que te move no mundo da tecnologia.</p>
-                <p>Mencione sua experiência com IA e como isso moldou suas habilidades.</p>
+            <img src="roger79.jpeg" alt="Foto de Perfil de Guillermo Hernandez" class="profile-image">
+                <div class="about-content">
+                    <p class="fade-in">Sou um **Desenvolvedor entusiasmado por Inteligência Artificial e soluções Web**, sempre em busca de inovação. Minha paixão é transformar ideias complexas em aplicações funcionais e intuitivas, com foco em resultados.</p>
+                    <p class="fade-in-delay">Minha jornada na tecnologia me levou a explorar profundamente a **Inteligência Artificial**, onde desenvolvi projetos desafiadores em áreas como processamento de linguagem natural e visão computacional, utilizando Python e TensorFlow. Mesmo enfrentando obstáculos de armazenamento, essa experiência solidificou minhas habilidades em otimização e resolução de problemas. Acredito que a combinação de lógica robusta e um design moderno é a chave para o sucesso digital.</p>
+                    <p class="fade-in-delay-2">Além da tecnologia, nos meus momentos de lazer, gosto de ler sobre ficção científica e praticar esportes.</p>
+                </div>
             </div>
         </section>
 
         <section id="habilidades" class="section">
             <div class="container">
-                <h2>Minhas Habilidades</h2>
+                <h2 class="glow-text">Minhas Habilidades</h2>
                 <div class="skills-grid">
-                    <div class="skill-item">HTML & CSS</div>
-                    <div class="skill-item">JavaScript</div>
-                    <div class="skill-item">Python (IA/ML)</div>
-                    <div class="skill-item">Git & GitHub</div>
+                    <div class="skill-item fade-in-up">
+                        <i class="fab fa-html5 skill-icon neon-blue-light"></i>
+                        <h3>HTML & CSS</h3>
+                        <p>Estruturação e estilização de interfaces web modernas e responsivas.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-1">
+                        <i class="fab fa-js skill-icon neon-purple-light"></i>
+                        <h3>JavaScript</h3>
+                        <p>Desenvolvimento de interatividade e lógica front-end robusta.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-2">
+                        <i class="fab fa-python skill-icon neon-green-light"></i>
+                        <h3>Python (IA/ML)</h3>
+                        <p>Criação de soluções de inteligência artificial e processamento de dados.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-3">
+                        <i class="fab fa-git-alt skill-icon neon-blue-light"></i>
+                        <h3>Git & GitHub</h3>
+                        <p>Controle de versão e colaboração eficiente em projetos de código.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-4">
+                        <i class="fas fa-magic skill-icon neon-purple-light"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Criação de experiências de usuário intuitivas e visualmente atraentes.</p>
+                    </div>
+                    <div class="skill-item fade-in-up delay-5">
+                        <i class="fas fa-database skill-icon neon-green-light"></i>
+                        <h3>Banco de Dados</h3>
+                        <p>Modelagem e gerenciamento de dados com SQL e NoSQL.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="portfolio" class="section">
             <div class="container">
-                <h2>Meus Projetos</h2>
-                <p>Aqui é onde seus projetos ganharão vida com o estilo néon!</p>
+                <h2 class="glow-text">Meus Projetos</h2>
+                <p class="section-description">Uma coleção dos meus trabalhos mais recentes, refletindo minha paixão e habilidades.</p>
+                <div class="portfolio-grid">
+                    <div class="project-card fade-in-up">
+                        <img src="https://via.placeholder.com/400x250/1C0F32/00FFFF?text=Projeto+IA" alt="Imagem do Projeto de IA" class="project-image">
+                        <h3 class="project-title">IA Project: [Nome do seu Projeto de IA]</h3>
+                        <p class="project-description">Um projeto em desenvolvimento focado em [objetivo da IA, ex: processamento de linguagem natural]. Explorei [tecnologias usadas, ex: TensorFlow, PyTorch] e [desafios/aprendizados].</p>
+                        <div class="project-links">
+                            <a href="[LINK_PARA_SEU_REPOSITORIO_GITHUB_IA]" target="_blank" class="btn-project-link"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up delay-1">
+                        <img src="https://via.placeholder.com/400x250/1C0F32/BF00FF?text=Website+E-commerce" alt="Imagem do Projeto E-commerce" class="project-image">
+                        <h3 class="project-title">E-commerce Dinâmico</h3>
+                        <p class="project-description">Desenvolvimento de uma plataforma de vendas online responsiva com foco em [tecnologias, ex: HTML, CSS, JavaScript Vanilla].</p>
+                        <div class="project-links">
+                            <a href="[LINK_PARA_SEU_REPOSITORIO_GITHUB_ECOM]" target="_blank" class="btn-project-link"><i class="fab fa-github"></i> Código</a>
+                            <a href="[LINK_PARA_O_SITE_LIVE_ECOM]" target="_blank" class="btn-project-link"><i class="fas fa-external-link-alt"></i> Ver Site</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in-up delay-2">
+                        <img src="https://via.placeholder.com/400x250/1C0F32/00FFFF?text=App+Gerenciamento" alt="Imagem do Projeto Gerenciamento" class="project-image">
+                        <h3 class="project-title">App de Gerenciamento de Tarefas</h3>
+                        <p class="project-description">Aplicação web para organização de tarefas e projetos, utilizando [tecnologias, ex: React.js, Node.js, MongoDB].</p>
+                        <div class="project-links">
+                            <a href="[LINK_PARA_SEU_REPOSITORIO_GITHUB_APP]" target="_blank" class="btn-project-link"><i class="fab fa-github"></i> Código</a>
+                            <a href="[LINK_PARA_O_SITE_LIVE_APP]" target="_blank" class="btn-project-link"><i class="fas fa-external-link-alt"></i> Ver App</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
         <section id="contato" class="section">
             <div class="container">
-                <h2>Entre em Contato</h2>
-                <p>Vamos criar algo incrível juntos!</p>
-                <p>Email: seu.email@example.com</p>
-                <p>LinkedIn: seu-linkedin</p>
-                <p>GitHub: seu-github</p>
+                <h2 class="glow-text">Entre em Contato</h2>
+                <p class="section-description">Adoraria conversar sobre novas oportunidades ou projetos.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope neon-blue-light"></i> Email: <a href="mailto:rh523755@gmail.com" class="neon-blue-light">rh523755@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin neon-purple-light"></i> LinkedIn: <a href="https://linkedin.com/in/guillermohernandez99342735/" target="_blank" class="neon-purple-light">guillermohernandez99342735</a></p>
+                    <p><i class="fab fa-github neon-green-light"></i> GitHub: <a href="https://github.com/Roger7927" target="_blank" class="neon-green-light">Roger7927</a></p>
+                    <p><i class="fab fa-whatsapp neon-blue-light"></i> WhatsApp: <a href="https://wa.me/seu-numero-whatsapp" target="_blank" class="neon-blue-light">Seu Número de WhatsApp (opcional)</a></p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Guillermo Hernandez. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/guillermohernandez99342735/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Roger7927" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
