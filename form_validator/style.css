@@ -1,0 +1,135 @@
+/* Importa a fonte Poppins (já linkada no HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Estilos Globais e Reset Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Cor de fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Contêiner Principal do Formulário */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
+    max-width: 400px; /* Largura máxima para centralizar */
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Estilos do Formulário */
+.form {
+    width: 100%;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative; /* Para posicionar a mensagem de erro */
+    text-align: left;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95em;
+}
+
+.form-control input {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+/* Estilos para estado de Sucesso e Erro (serão ativados pelo JavaScript) */
+.form-control.success input {
+    border-color: #2ecc71; /* Verde */
+}
+
+.form-control.error input {
+    border-color: #e74c3c; /* Vermelho */
+}
+
+.form-control .error-message {
+    color: #e74c3c; /* Vermelho para erro */
+    font-size: 0.85em;
+    height: 16px; /* Garante que a altura não varie quando a mensagem aparecer */
+    margin-top: 4px; /* Espaço entre o input e a mensagem */
+    display: block; /* Garante que o small ocupe sua própria linha */
+    visibility: hidden; /* Esconde por padrão */
+    opacity: 0; /* Esconde por padrão */
+    transition: visibility 0s, opacity 0.3s ease;
+}
+
+.form-control.error .error-message {
+    visibility: visible; /* Torna visível em caso de erro */
+    opacity: 1; /* Mostra a mensagem com transição */
+}
+
+/* Estilos do Botão */
+.form button {
+    background-color: #4a90e2; /* Azul vibrante */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #3a7bd2; /* Azul um pouco mais escuro no hover */
+    transform: translateY(-2px); /* Leve efeito de "levantar" */
+}
+
+/* Responsividade Básica (para telas menores) */
+@media (max-width: 480px) {
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .form-control input {
+        padding: 10px;
+    }
+    .form button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}

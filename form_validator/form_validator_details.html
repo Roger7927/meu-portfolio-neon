@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto: Validador de Formulário | Seu Nome</title>
+
+    <link rel="stylesheet" href="../style.css"> 
+
+    <style>
+        /* Estilos ESPECÍFICOS para esta página de detalhes do projeto */
+        body {
+            background-color: var(--bg-dark); /* Usa a variável de fundo escuro do style.css do portfólio */
+            color: var(--text-light); /* Usa a variável de cor de texto claro do style.css do portfólio */
+            font-family: 'Poppins', sans-serif; /* Mantém a fonte do portfólio */
+            line-height: 1.6;
+            padding-top: 100px; /* Espaço para o header fixo do portfólio */
+            padding-bottom: 50px;
+        }
+        .container-project { /* Um container ligeiramente diferente para detalhes de projeto */
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg); /* Usa a variável de fundo de card */
+            padding: 40px;
+            border-radius: 12px;
+            border: 2px solid var(--neon-blue); /* Borda néon azul */
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Brilho sutil azul */
+            margin-top: 30px; 
+        }
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--neon-purple); /* Títulos néon roxo */
+            text-align: center;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px var(--neon-purple);
+        }
+        p, li {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+        .project-image-detail {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border: 3px solid var(--neon-green); /* Borda néon verde */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.5); /* Brilho verde na imagem */
+        }
+        .tech-list, .functionality-list, .challenges-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza os itens */
+        }
+        .tech-list li, .functionality-list li, .challenges-list li {
+            background-color: var(--neon-blue);
+            color: var(--bg-dark);
+            padding: 10px 20px;
+            margin: 8px;
+            border-radius: 25px;
+            font-size: 0.95em;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tech-list li:hover, .functionality-list li:hover, .challenges-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-blue);
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn-project-action {
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid var(--neon-purple);
+            border-radius: 8px;
+            color: var(--neon-purple);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: transparent;
+            box-shadow: 0 0 15px var(--neon-purple), inset 0 0 10px var(--neon-purple);
+            transition: all 0.4s ease;
+            text-decoration: none;
+        }
+        .btn-project-action:hover {
+            background-color: var(--neon-purple);
+            color: var(--bg-dark);
+            box-shadow: 0 0 25px var(--neon-purple), 0 0 50px var(--neon-purple), 0 0 75px var(--neon-purple), inset 0 0 15px var(--neon-purple);
+            transform: translateY(-3px);
+        }
+        /* Estilo para a tag de status */
+        .status-tag {
+            display: inline-block;
+            background-color: var(--neon-green);
+            color: var(--bg-dark);
+            font-size: 0.8em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+            vertical-align: middle;
+            font-family: 'Space Mono', monospace;
+            font-weight: bold;
+            text-shadow: none; /* Remove brilho do texto para contraste */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-project">
+        <h1>Validador de Formulário <span class="status-tag">Em Construção Contínua</span></h1>
+
+        <p>
+            Este projeto é um **Validador de Formulário** interativo, desenvolvido com HTML, CSS e JavaScript puro. Seu objetivo principal é garantir que os dados inseridos pelos usuários em um formulário de registro atendam a critérios específicos de validação em tempo real, fornecendo feedback claro e instantââneo.
+        </p>
+        <p>
+            É uma demonstração prática de como criar uma experiência de usuário mais robusta e amigável no front-end, evitando o envio de dados inválidos para o servidor e melhorando a usabilidade geral.
+        </p>
+
+        <img src="https://via.placeholder.com/900x450/1A0F2B/FFFFFF?text=Validador+de+Formulario+Demo" alt="Imagem do Projeto Validador de Formulário" class="project-image-detail">
+        <h2>Tecnologias Utilizadas:</h2>
+        <ul class="tech-list">
+            <li>HTML5</li>
+            <li>CSS3 (Design Responsivo)</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Regex (Expressões Regulares para Email)</li>
+            <li>Manipulação do DOM</li>
+            <li>Event Handling</li>
+        </ul>
+
+        <h2>Funcionalidades Principais:</h2>
+        <ul class="functionality-list">
+            <li>Validação de Campos Obrigatórios</li>
+            <li>Verificação de Formato de Email</li>
+            <li>Validação de Comprimento Mínimo e Máximo para Nome de Usuário e Senha</li>
+            <li>Confirmação de Senha (verificação de correspondência)</li>
+            <li>Feedback Visual (bordas e mensagens de erro/sucesso)</li>
+            <li>Prevenção de Envio de Formulário Inválido</li>
+        </ul>
+
+        <h2>Desafios e Aprendizados:</h2>
+        <ul class="challenges-list">
+            <li>
+                <strong>Gerenciamento de Estado de UI:</strong> Desenvolver um sistema robusto para adicionar/remover classes CSS dinamicamente com base no estado de validação de cada campo.
+            </li>
+            <li>
+                <strong>Expressões Regulares:</strong> Aprofundar o conhecimento em Regex para criar validações de formato de email precisas e flexíveis.
+            </li>
+            <li>
+                <strong>Modularização do Código:</strong> Organizar o JavaScript em funções reutilizáveis para cada tipo de validação (obrigatório, comprimento, email, etc.).
+            </li>
+            <li>
+                <strong>Experiência do Usuário (UX):</strong> Focar em fornecer feedback claro e imediato ao usuário, tornando o processo de preenchimento do formulário mais intuitivo e menos frustrante.
+            </li>
+        </ul>
+
+        <div class="button-container">
+            <a href="index.html" class="btn-project-action" target="_blank">Ver Projeto Online</a>
+            <a href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO_VALIDADOR" target="_blank" class="btn-project-action">Ver Código no GitHub</a>
+        </div>
+
+        <p style="font-size: 0.9em; margin-top: 30px; color: var(--text-secondary);">
+            *Este projeto é uma prova de conceito e está em constante aprimoramento. Novas funcionalidades e refatorações serão adicionadas regularmente.
+        </p>
+
+    </div>
+</body>
+</html>

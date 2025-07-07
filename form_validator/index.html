@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulário | Seu Nome</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Crie sua Conta</h2>
+        <form id="registrationForm" class="form">
+            <div class="form-control">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" placeholder="Digite seu nome de usuário">
+                <small class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+                <small class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+                <small class="error-message"></small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirmar Senha</label>
+                <input type="password" id="password2" placeholder="Confirme sua senha">
+                <small class="error-message"></small>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
